@@ -153,6 +153,80 @@ letter-spacing: 0.48px;
 
 /* FOOTER START */
 
+.footer{
+    background-color: #2F303A;
+}
 
+.footer-logo{
+    color: var(--whiteColor);
+}
+
+.footer-link{
+    color: rgba(255, 255, 255, 0.60);
+
+    font-style: normal;
+font-weight: 400;
+line-height: calc(24 / 14); 
+letter-spacing: 0.42px;
+}
+.footer-link:hover,
+.footer-link:focus{
+color: var(--accentColor);
+}
+
+.footer-map{
+    color: var(--whiteColor);
+}
 
 /* FOOTER END */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!PORTFOLIO!!!!!!!!!!!!!!!!!!!!!! */
+
+/*   NAVIGATION SRART  */
+
+.navigation-button{
+    color: var(--titleColor);
+    font-family: inherit;
+font-size: 16px;
+font-weight: 500;
+line-height: calc(26 / 16); 
+letter-spacing: 0.48px;
+
+padding: 6px 22px;
+cursor: pointer;
+
+border-radius: 4px;
+border: #F5F4FA;
+background: #F5F4FA;
+}
+.navigation-button:hover,
+.navigation-button:focus{
+    color: var(--whiteColor);
+
+
+    border-radius: 4px;
+
+background: #2196F3;
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+/* NAVIGATION END */
+
+/* DID START */
+
+
+.did-title{
+    color: var(--titleColor);
+font-size: 18px;
+font-weight: 700;
+line-height: calc(36 / 18);
+letter-spacing: 1.08px;
+}
+
+.did-text{
+    color: var(--brandColor);
+font-size: 16px;
+line-height: calc(30 / 16); 
+letter-spacing: 0.48px;
+}
+
+/* DID END */
