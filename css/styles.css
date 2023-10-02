@@ -323,6 +323,7 @@ justify-content: space-between;
 .team-link:focus{
     background-color: var(--accentColor);
     fill: var(--whiteColor);
+    outline: none;
 }
 
 .team-svg{
