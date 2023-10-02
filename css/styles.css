@@ -115,9 +115,15 @@ padding-bottom: 32px;
     margin-left: auto;
 }
 
+.header-svg{
+    margin-right: 10px;
+}
 
 .header-address{
+    display: flex;
+    align-items: center;
     color: var(--brandColor);
+    fill: var(--brandColor);
 
 font-weight: 500;
 letter-spacing: 0.28px;
@@ -127,22 +133,28 @@ padding: 32px 0;
 .header-address:hover,
 .header-address:focus{
     color: var(--accentColor);
+    fill: var(--accentColor);
 }
 /* HEADER END */
 
 /* HERO START */
-
-.hero{
-    background-color: rgb(47, 48, 58);
-}
 
 .hero-box{
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    background-color: rgba(47, 48, 58, 0.40);
    padding-top: 200px;
    padding-bottom: 200px;
+
+   max-width: 1600px;
+   height: 600px;
+   background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../image/hero/Img.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
 }
 
 .hero-title{
@@ -180,6 +192,7 @@ background: var(--accentButton);
 
 /* HERO END */
 
+
 /* WORK STAT */
 .work{
     padding-top: 94px;
@@ -194,16 +207,32 @@ background: var(--accentButton);
 margin-right: 30px;
 }
 
-.work-title{
-    color: var(--titleColor);
 
- font-size: 14px;
-font-weight: 700;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-
-margin-bottom: 10px;
+.work-item::before{
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
 }
+.work-item:nth-child(1)::before{
+    background-image: url(../image/how-we-work/antenna1.svg);
+}
+.work-item:nth-child(2)::before{
+    background-image: url(../image/how-we-work/clock2.svg);
+}
+.work-item:nth-child(3)::before{
+    background-image: url(../image/how-we-work/diagram3.svg);
+}
+.work-item:nth-child(4)::before{
+    background-image: url(/image/how-we-work/astronaut4.svg);
+}
+
 
 .work-text{
 font-weight: 400;
@@ -230,7 +259,9 @@ letter-spacing: 0.18px;
 /* TEAM START */
 
 .team{
-    margin-bottom: 94px;
+   padding-top: 94px;
+   padding-bottom: 94px;
+    background: #F5F4FA;
 }
 
 .team-list{
@@ -270,10 +301,71 @@ margin-bottom: 10px;
     color: var(--brandColor);
 font-size: 16px;
 letter-spacing: 0.48px;
+margin-bottom: 16px;
 
 }
 
+.team-list.contacts{
+width: 206px;
+justify-content: space-between;
+}
+
+.team-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--brandColor);
+}
+.team-link:hover,
+.team-link:focus{
+    background-color: var(--accentColor);
+    fill: var(--whiteColor);
+}
+
+.team-svg{
+background-repeat: no-repeat;
+background-position: center;
+
+}
 /* TEAM END */
+
+/* CUSTOMERS START */
+.customers-box{
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-item{
+    width: 170px;
+    height: 92px;
+}
+
+.customers-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+border: 1px solid #AFB1B8;
+
+fill: var(--brandColor);
+}
+.customers-link:hover,
+.customers-link:focus{
+    fill: var(--accentColor);
+    border: solid var(--accentColor);
+    outline: none;
+}
+
+.customers-item:not(:last-child){
+    margin-right: 30px;
+}
+/* CUSTOMERS END */
 
 /* FOOTER START */
 
@@ -283,10 +375,18 @@ letter-spacing: 0.48px;
     padding-bottom: 60px;
 }
 
+.footer-box{
+    display: flex;
+}
+
 .footer-logo{
     display: block;
     color: var(--whiteColor);
     margin-bottom: 20px;
+}
+
+.container{
+    margin-right: 70px;
 }
 
 .footer-link{
@@ -306,6 +406,36 @@ color: var(--accentColor);
     color: var(--whiteColor);
 }
 
+.footer-subject{
+    display: block;
+    color: var(--whiteColor);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.footer-link.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.10);
+}
+.footer-link.contacts:hover,
+.footer-link.contacts:focus{
+    background-color: var(--accentColor);
+}
+.footer-svg{
+    fill: var(--whiteColor);
+}
 /* FOOTER END */
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!PORTFOLIO!!!!!!!!!!!!!!!!!!!!!! */
