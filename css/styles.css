@@ -281,7 +281,7 @@ margin-right: 30px;
     background-image: url(../image/how-we-work/diagram.svg);
 }
 .work-item:nth-child(4)::before{
-    background-image: url(/image/how-we-work/astronaut.svg);
+    background-image: url(../image/how-we-work/astronaut.svg)
 }
 
 
